@@ -8,5 +8,24 @@
   },
   "Company": {
     "name": "Betak 3lena"
+  },
+  "Login": {
+    "title": "Welcome back",
+    "subtitle": "Login to your Betak-Alena account",
+    "email_label": "Email",
+    "email_placeholder": "name@omnexa-technology.com",
+    "password_label": "Password",
+    "forgot_password": "Forgot your password?",
+    "login_button": "Login",
+    "continue_with": "Or continue with",
+    "apple": "Login with Apple",
+    "google": "Login with Google",
+    "mobile": "Login with Mobile",
+    "no_account": "Don't have an account?",
+    "signup": "Sign up",
+    "terms_prefix": "By clicking continue, you agree to our ",
+    "terms": "Terms of Service",
+    "terms_and": " and ",
+    "privacy": "Privacy Policy"
   }
 }
