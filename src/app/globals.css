@@ -145,6 +145,10 @@
     --sidebar-ring: hsl(210 100% 50%);
 }
 
+html[lang="ar"] {
+    font-size: 110%
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

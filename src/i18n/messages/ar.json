@@ -26,7 +26,10 @@
     "analytics": "التحليلات",
     "roles": "الأدوار والصلاحيات",
     "settings": "الإعدادات",
-    "admin_dashboard": "لوحة تحكم المسؤول"
+    "admin_dashboard": "لوحة تحكم المسؤول",
+    "collapse_all": "طي الكل",
+    "expand_all": "توسيع الكل",
+    "search_routes": "البحث في القوائم..."
   },
   "UserMenu": {
     "account": "الحساب",

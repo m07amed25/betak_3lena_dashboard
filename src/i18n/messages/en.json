@@ -26,7 +26,10 @@
     "analytics": "Analytics",
     "roles": "Roles & Permissions",
     "settings": "Settings",
-    "admin_dashboard": "Admin Dashboard"
+    "admin_dashboard": "Admin Dashboard",
+    "collapse_all": "Collapse All",
+    "expand_all": "Expand All",
+    "search_routes": "Search routes..."
   },
   "UserMenu": {
     "account": "Account",
