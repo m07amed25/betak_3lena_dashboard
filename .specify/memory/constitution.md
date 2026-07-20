@@ -1,50 +1,140 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report
+Version: 0.0.0 -> 1.0.0
+Modified Principles: Initialized with Frontend Dashboard Constitution principles.
+Added Sections: Design Principles, UI/UX, Components, State Management, Performance, Accessibility, Responsive Design, Data Presentation, Forms, Code Standards, Documentation, Decision Making
+Removed Sections: N/A
+Templates requiring updates:
+  - .specify/templates/plan-template.md (✅ updated)
+  - .specify/templates/spec-template.md (✅ updated)
+  - .specify/templates/tasks-template.md (✅ updated)
+Follow-up TODOs: N/A
+-->
+
+# Betak-Alena Admin Dashboard Constitution
+
+## Mission
+
+Create frontend specifications that prioritize usability, accessibility, responsiveness, performance, and developer experience.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Design Principles
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+- Simplicity over complexity.
+- Consistency over creativity.
+- Accessibility is mandatory.
+- Every UI element must serve a purpose.
+- Optimize for user productivity.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### UI/UX
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+- Use a clean and modern design.
+- Follow an 8px spacing system.
+- Maintain consistent typography and color usage.
+- Provide clear visual hierarchy.
+- Support light and dark themes.
+- Design mobile-first while optimizing for desktop dashboards.
+- Always include loading, empty, success, and error states.
+- Use skeleton loaders instead of spinners whenever possible.
+- Confirm destructive actions.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Components
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+- Build reusable components.
+- Follow Atomic Design principles.
+- Separate layout components from business components.
+- Prefer composition over inheritance.
+- Keep components focused on a single responsibility.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### State Management
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+- Keep local state local.
+- Use global state only when necessary.
+- Separate UI state from server state.
+- Avoid prop drilling.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Performance
+
+- Lazy load pages and large components.
+- Optimize images and assets.
+- Memoize expensive computations only when beneficial.
+- Minimize unnecessary re-renders.
+- Use virtualization for long lists.
+- Split code by route.
+
+### Accessibility
+
+- Meet WCAG 2.1 AA.
+- Full keyboard navigation.
+- Proper focus management.
+- Semantic HTML.
+- Accessible labels and ARIA only when needed.
+- Maintain sufficient color contrast.
+
+### Responsive Design
+
+Every screen must support:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Layouts should adapt gracefully without losing functionality.
+
+### Data Presentation
+
+- Tables should support sorting, filtering, searching, and pagination.
+- Charts must communicate insights clearly.
+- Display units and timestamps consistently.
+- Avoid decorative visualizations.
+
+### Forms
+
+- Validate inputs immediately where appropriate.
+- Show helpful validation messages.
+- Preserve user input on errors.
+- Disable submission during processing.
+- Use sensible defaults.
+
+### Code Standards
+
+- Follow clean architecture.
+- Keep business logic separate from UI.
+- Use descriptive component names.
+- Avoid duplication.
+- Keep components small and maintainable.
+
+### Documentation
+
+Each feature specification should include:
+
+- User Story
+- Acceptance Criteria
+- Page Layout
+- Component Breakdown
+- State Management
+- API Integration Requirements
+- Loading States
+- Error States
+- Responsive Behavior
+- Accessibility Notes
+
+## Decision Making
+
+When multiple solutions exist:
+
+1. Compare the options.
+2. Explain the trade-offs.
+3. Recommend the simplest maintainable solution.
+4. Justify the recommendation.
+
+Never introduce unnecessary complexity.
+Always optimize for readability, maintainability, and user experience.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All feature specifications, PRs, and code reviews must verify compliance with this constitution.
+Use `AGENTS.md` for runtime development guidance.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-07-20 | **Last Amended**: 2026-07-20

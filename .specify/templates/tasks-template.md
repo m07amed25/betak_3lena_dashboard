@@ -152,8 +152,11 @@ Examples of foundational tasks (adjust based on your project):
 **Purpose**: Improvements that affect multiple user stories
 
 - [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
+- [ ] TXXX Code cleanup and refactoring (ensure single-responsibility components)
+- [ ] TXXX Performance optimization (lazy loading, memoization, virtualization)
+- [ ] TXXX Verify responsive design (Desktop, Laptop, Tablet, Mobile)
+- [ ] TXXX Verify accessibility (Keyboard navigation, WCAG 2.1 AA, Focus management)
+- [ ] TXXX Verify loading, empty, and error states implementation
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation

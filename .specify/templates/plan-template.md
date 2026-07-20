@@ -40,7 +40,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Simplicity/Consistency:** Is the architecture unnecessarily complex? Does it align with existing patterns?
+- **Component Design:** Are we creating reusable, single-responsibility components using Atomic Design principles?
+- **State Management:** Is local state kept local? Is UI state separated from server state without prop drilling?
+- **Performance:** Are we lazy loading, splitting code, optimizing assets, and virtualizing where appropriate?
+- **Data Presentation & Forms:** Do tables support sorting/filtering/pagination? Are form validations immediate and helpful?
 
 ## Project Structure
 
