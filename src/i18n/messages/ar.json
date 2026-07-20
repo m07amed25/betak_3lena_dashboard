@@ -1,0 +1,31 @@
+{
+  "Dashboard": {
+    "title": "لوحة القيادة"
+  },
+  "Navigation": {
+    "overview": "نظرة عامة",
+    "dashboard": "لوحة القيادة"
+  },
+  "Company": {
+    "name": "بيتك علينا"
+  },
+  "Login": {
+    "title": "مرحباً بك مجدداً",
+    "subtitle": "تسجيل الدخول إلى حساب بيتك علينا",
+    "email_label": "البريد الإلكتروني",
+    "email_placeholder": "name@omnexa-technology.com",
+    "password_label": "كلمة المرور",
+    "forgot_password": "هل نسيت كلمة المرور؟",
+    "login_button": "تسجيل الدخول",
+    "continue_with": "أو المتابعة باستخدام",
+    "apple": "تسجيل الدخول باستخدام Apple",
+    "google": "تسجيل الدخول باستخدام Google",
+    "mobile": "تسجيل الدخول باستخدام الهاتف",
+    "no_account": "ليس لديك حساب؟",
+    "signup": "إنشاء حساب",
+    "terms_prefix": "بالنقر على متابعة، فإنك توافق على ",
+    "terms": "شروط الخدمة",
+    "terms_and": " و ",
+    "privacy": "سياسة الخصوصية"
+  }
+}

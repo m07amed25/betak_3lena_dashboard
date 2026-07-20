@@ -1072,3 +1072,13 @@ a `// TODO:` referencing the open question.
 - Auth.js v5 migration guide — https://authjs.dev/getting-started/migrating-to-v5
 - Auth.js Next.js reference — https://authjs.dev/reference/nextjs
 - next-intl App Router i18n guide
+
+---
+
+## 19. Product & Design Context
+
+- **Product:** Betak-Alena admin dashboard (internal tool for support, finance, ops).
+- **Platform:** Web (Next.js 16).
+- **Brand Personality:** Friendly, modern, approachable.
+- **Anti-references:** No sketchy SVGs or playful themes.
+- **Accessibility:** Standard best practices.
