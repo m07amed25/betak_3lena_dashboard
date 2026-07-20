@@ -9,6 +9,33 @@
   "Company": {
     "name": "بيتك علينا"
   },
+  "Sidebar": {
+    "operations": "العمليات",
+    "requests": "الطلبات",
+    "technicians": "الفنيين",
+    "clients": "العملاء",
+    "approvals": "الموافقات (KYC)",
+    "categories": "الفئات والخدمات",
+    "support_and_moderation": "الدعم والمراقبة",
+    "technical_support": "الدعم الفني",
+    "chat_moderation": "مراقبة محادثات الذكاء الاصطناعي",
+    "finance": "المالية",
+    "payments": "المدفوعات",
+    "accounting": "المحاسبة",
+    "system": "النظام",
+    "analytics": "التحليلات",
+    "roles": "الأدوار والصلاحيات",
+    "settings": "الإعدادات",
+    "admin_dashboard": "لوحة تحكم المسؤول"
+  },
+  "UserMenu": {
+    "account": "الحساب",
+    "notifications": "الإشعارات",
+    "logout": "تسجيل الخروج"
+  },
+  "Common": {
+    "content_placeholder": "سيتم عرض محتوى {module} هنا."
+  },
   "Login": {
     "title": "مرحباً بك مجدداً",
     "subtitle": "تسجيل الدخول إلى حساب بيتك علينا",

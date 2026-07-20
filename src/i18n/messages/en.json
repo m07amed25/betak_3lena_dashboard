@@ -9,6 +9,33 @@
   "Company": {
     "name": "Betak 3lena"
   },
+  "Sidebar": {
+    "operations": "Operations",
+    "requests": "Requests & Orders",
+    "technicians": "Technicians",
+    "clients": "Clients",
+    "approvals": "Approvals (KYC)",
+    "categories": "Categories & Services",
+    "support_and_moderation": "Support & Moderation",
+    "technical_support": "Technical Support",
+    "chat_moderation": "AI Chat Moderation",
+    "finance": "Finance",
+    "payments": "Payments",
+    "accounting": "Accounting",
+    "system": "System",
+    "analytics": "Analytics",
+    "roles": "Roles & Permissions",
+    "settings": "Settings",
+    "admin_dashboard": "Admin Dashboard"
+  },
+  "UserMenu": {
+    "account": "Account",
+    "notifications": "Notifications",
+    "logout": "Log out"
+  },
+  "Common": {
+    "content_placeholder": "Content for {module} will go here."
+  },
   "Login": {
     "title": "Welcome back",
     "subtitle": "Login to your Betak-Alena account",
