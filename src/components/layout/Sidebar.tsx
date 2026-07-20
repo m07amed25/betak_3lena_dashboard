@@ -1,194 +1,145 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
+import { useTranslations } from "next-intl";
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { SidebarCompany } from "@/components/layout/SidebarCompany"
+import { usePathname } from "@/i18n/routing";
+
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
+import { SidebarCompany } from "@/components/layout/SidebarCompany";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
-import { GalleryVerticalEndIcon, AudioLinesIcon, TerminalIcon, TerminalSquareIcon, BotIcon, BookOpenIcon, Settings2Icon, FrameIcon, PieChartIcon, MapIcon } from "lucide-react"
-
-// This is sample data.
-const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
-  teams: [
-    {
-      name: "Acme Inc",
-      logo: (
-        <GalleryVerticalEndIcon
-        />
-      ),
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: (
-        <AudioLinesIcon
-        />
-      ),
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: (
-        <TerminalIcon
-        />
-      ),
-      plan: "Free",
-    },
-  ],
-  navMain: [
-    {
-      title: "Playground",
-      url: "#",
-      icon: (
-        <TerminalSquareIcon
-        />
-      ),
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: (
-        <BotIcon
-        />
-      ),
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: (
-        <BookOpenIcon
-        />
-      ),
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: (
-        <Settings2Icon
-        />
-      ),
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: (
-        <FrameIcon
-        />
-      ),
-    },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: (
-        <PieChartIcon
-        />
-      ),
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: (
-        <MapIcon
-        />
-      ),
-    },
-  ],
-}
+} from "@/components/ui/sidebar";
+import {
+  BriefcaseIcon,
+  HeadsetIcon,
+  CreditCardIcon,
+  Settings2Icon,
+} from "lucide-react";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const t = useTranslations("Sidebar");
+  const pathname = usePathname();
+
+  const navMain = [
+    {
+      title: t("operations"),
+      url: "#",
+      icon: <BriefcaseIcon />,
+      isActive: [
+        "/requests",
+        "/technicians",
+        "/clients",
+        "/approvals",
+        "/categories",
+      ].some((url) => pathname.startsWith(url)),
+      items: [
+        {
+          title: t("requests"),
+          url: "/requests",
+        },
+        {
+          title: t("technicians"),
+          url: "/technicians",
+        },
+        {
+          title: t("clients"),
+          url: "/clients",
+        },
+        {
+          title: t("approvals"),
+          url: "/approvals",
+        },
+        {
+          title: t("categories"),
+          url: "/categories",
+        },
+      ],
+    },
+    {
+      title: t("support_and_moderation"),
+      url: "#",
+      icon: <HeadsetIcon />,
+      isActive: ["/support", "/moderation"].some((url) =>
+        pathname.startsWith(url)
+      ),
+      items: [
+        {
+          title: t("technical_support"),
+          url: "/support",
+        },
+        {
+          title: t("chat_moderation"),
+          url: "/moderation",
+        },
+      ],
+    },
+    {
+      title: t("finance"),
+      url: "#",
+      icon: <CreditCardIcon />,
+      isActive: ["/payments", "/accounting"].some((url) =>
+        pathname.startsWith(url)
+      ),
+      items: [
+        {
+          title: t("payments"),
+          url: "/payments",
+        },
+        {
+          title: t("accounting"),
+          url: "/accounting",
+        },
+      ],
+    },
+    {
+      title: t("system"),
+      url: "#",
+      icon: <Settings2Icon />,
+      isActive: ["/analytics", "/admins", "/settings"].some((url) =>
+        pathname.startsWith(url)
+      ),
+      items: [
+        {
+          title: t("analytics"),
+          url: "/analytics",
+        },
+        {
+          title: t("roles"),
+          url: "/admins",
+        },
+        {
+          title: t("settings"),
+          url: "/settings",
+        },
+      ],
+    },
+  ];
+
+  // TODO: Replace with actual session user data
+  const user = {
+    name: "Admin User",
+    email: "admin@omnexa-technology.com",
+    avatar: "",
+  };
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <SidebarCompany />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavMain items={navMain} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }
