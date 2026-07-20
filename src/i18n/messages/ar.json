@@ -1,0 +1,12 @@
+{
+  "Dashboard": {
+    "title": "لوحة القيادة"
+  },
+  "Navigation": {
+    "overview": "نظرة عامة",
+    "dashboard": "لوحة القيادة"
+  },
+  "Company": {
+    "name": "بيتك علينا"
+  }
+}

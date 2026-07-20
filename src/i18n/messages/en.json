@@ -1,0 +1,12 @@
+{
+  "Dashboard": {
+    "title": "Dashboard"
+  },
+  "Navigation": {
+    "overview": "Overview",
+    "dashboard": "Dashboard"
+  },
+  "Company": {
+    "name": "Betak 3lena"
+  }
+}
