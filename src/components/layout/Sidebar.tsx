@@ -134,7 +134,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarCompany />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={navMain} />
+        <NavMain 
+          items={navMain} 
+          collapseAllLabel={t("collapse_all")} 
+          expandAllLabel={t("expand_all")}
+          searchPlaceholder={t("search_routes")}
+        />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={user} />
