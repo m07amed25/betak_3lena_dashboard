@@ -56,6 +56,12 @@
     "terms_prefix": "By clicking Login, you agree to our ",
     "terms": "Terms of Service",
     "terms_and": " and ",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "otp_label": "Verification Code",
+    "otp_placeholder": "Enter code",
+    "verify_button": "Verify",
+    "back_button": "Back",
+    "email_required": "Email is required.",
+    "email_invalid": "Please enter a valid email address."
   }
 }

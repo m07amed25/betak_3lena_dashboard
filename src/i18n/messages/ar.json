@@ -56,6 +56,12 @@
     "terms_prefix": "بالنقر على تسجيل الدخول, فإنك توافق على ",
     "terms": "شروط الخدمة",
     "terms_and": " و ",
-    "privacy": "سياسة الخصوصية"
+    "privacy": "سياسة الخصوصية",
+    "otp_label": "رمز التحقق",
+    "otp_placeholder": "أدخل الرمز",
+    "verify_button": "تحقق",
+    "back_button": "رجوع",
+    "email_required": "البريد الإلكتروني مطلوب.",
+    "email_invalid": "يرجى إدخال عنوان بريد إلكتروني صالح."
   }
 }
